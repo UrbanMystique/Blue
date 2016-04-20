@@ -11,6 +11,12 @@
 	<link href="css/main.css" rel="stylesheet">
 	<link href="css/animate.css" rel="stylesheet">	
 	<link href="css/responsive.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.tzineClock/jquery.tzineClock.js"></script>
+
+<script type="text/javascript" src="script.js"></script>
+
 
     <!--[if lt IE 9]>
 	    <script src="js/html5shiv.js"></script>
@@ -21,6 +27,22 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content=""> 
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/main.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+      <![endif]-->
 </head><!--/head-->
 
 <body>
@@ -50,12 +72,11 @@
 		            </div>
 		            <div class="collapse navbar-collapse">
 		                <ul class="nav navbar-nav navbar-right">                 
-		                    <li class="scroll active"><a href="#home">Home</a></li>
-		                    <li class="scroll"><a href="#explore">Explore</a></li>                         
-		                    <li class="scroll"><a href="#event">Event</a></li>
-		                    <li class="scroll"><a href="#about">About</a></li>                     
-		                    <li class="no-scroll"><a href="#twitter">Twitter</a></li>
-		                    <li><a class="no-scroll" href="#" target="_blank">PURCHASE TICKETS</a></li>
+		                    <li class="scroll active"><a href="#home">Home</a></li>                        
+		                    <li class="scroll"><a href="#event">Resources</a></li>
+		                    <li class="scroll"><a href="#about">About</a></li> 
+                            <li class="scroll"><a href="#sponsor">Clients</a></li>                          
+		                    <li><a class="scroll" href="#pricing" target="_blank">Pricing</a></li>
 		                    <li class="scroll"><a href="#contact">Contact</a></li>       
 		                </ul>
 		            </div>
@@ -76,25 +97,25 @@
 				<div class="item active">
 					<img class="img-responsive" src="images/slider/bg1.jpg" alt="slider">						
 					<div class="carousel-caption">
-						<h2>register for our next event </h2>
-						<h4>full event package only @$199</h4>
-						<a href="#contact">GRAB YOUR TICKETS <i class="fa fa-angle-right"></i></a>
+						<h2>Ready to bring Pmedia to your company? </h2>
+						<h4>Let's Get Started</h4>
+						<a href="#pricing">Social Media Management Pricing <i class="fa fa-angle-right"></i></a>
 					</div>
 				</div>
 				<div class="item">
 					<img class="img-responsive" src="images/slider/bg2.jpg" alt="slider">	
 					<div class="carousel-caption">
-						<h2> </h2>
-						<h4>f</h4>
-						<a href="#contact">GRAB YOUR TICKETS <i class="fa fa-angle-right"></i></a>
+						<h2>Ready to bring Pmedia to your company?</h2>
+						<h4>Let's Get Started</h4>
+						<a href="#pricing">Social Media Management Pricing <i class="fa fa-angle-right"></i></a>
 					</div>
 				</div>
 				<div class="item">
 					<img class="img-responsive" src="images/slider/bg3.jpg" alt="slider">	
 					<div class="carousel-caption">
-						<h2> </h2>
-						<h4></h4>
-						<a href="#contact" >GRAB YOUR TICKETS <i class="fa fa-angle-right"></i></a>
+						<h2> Ready to bring Pmedia to your company? </h2>
+						<h4>Let's Get Started</h4>
+						<a href="#pricing" >Social Media Management Pricing <i class="fa fa-angle-right"></i></a>
 					</div>
 				</div>				
 			</div>
@@ -102,41 +123,7 @@
     </section>
 	<!--/#home-->
 
-	<section id="explore">
-		<div class="container">
-			<div class="row">
-				<div class="watch">
-					<img class="img-responsive" src="images/watch.png" alt="">
-				</div>				
-				<div class="col-md-4 col-md-offset-2 col-sm-5">
-					<h2>our next event in</h2>
-				</div>				
-				<div class="col-sm-7 col-md-6">					
-					<ul id="countdown">
-						<li>					
-							<span class="days time-font">00</span>
-							<p>days </p>
-						</li>
-						<li>
-							<span class="hours time-font">00</span>
-							<p class="">hours </p>
-						</li>
-						<li>
-							<span class="minutes time-font">00</span>
-							<p class="">minutes</p>
-						</li>
-						<li>
-							<span class="seconds time-font">00</span>
-							<p class="">seconds</p>
-						</li>				
-					</ul>
-				</div>
-			</div>
-			<div class="cart">
-				<a href="#"><i class="fa fa-shopping-cart"></i> <span>Purchase Tickets</span></a>
-			</div>
-		</div>
-	</section><!--/#explore-->
+	
 
 	<section id="event">
 		<div class="container">
@@ -213,69 +200,40 @@
 		<div class="about-content">					
 					<h2>About PATTY MEDIA CONNECTIONS</h2>
 					<p>We are a socail media managment company deticated to help small business be seen in all socail media outlet of there choice. We understand that sometimes managing social media with all its requirements can sometimes feel a little overwhelming particularly if you have competing business demands and requirements. This event is deticted to get you all the resources and networks connection that will create richer customer relationships, and generate more sales leads through word of mouth advertising.</p>
-					<a href="#" class="btn btn-primary">View Date & Place <i class="fa fa-angle-right"></i></a>
+					<a href="#sponsor" class="btn btn-primary">Client List <i class="fa fa-angle-right"></i></a>
 				
 		</div>
 	</section><!--/#about-->
 	
-	<section id="twitter">
-		<div id="twitter-feed" class="carousel slide" data-interval="false">
-			<div class="twit">
-				<img class="img-responsive" src="images/twit.png" alt="twit">
-			</div>
-			<div class="row">
-				<div class="col-sm-6 col-sm-offset-3">
-					<div class="text-center carousel-inner center-block">
-						<div class="item active">
-							<img src="images/twitter/twitter1.png" alt="">
-							<p>In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit </p>
-							<a href="#">http://t.co/yY7s1IfrAb 2 days ago</a>
-						</div>
-						<div class="item">
-							<img src="images/twitter/twitter2.png" alt="">
-							<p>In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit </p>
-							<a href="#">http://t.co/yY7s1IfrAb 2 days ago</a>
-						</div>
-						<div class="item">
-							<img src="images/twitter/twitter3.png" alt="">
-							<p>In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit </p>
-							<a href="#">http://t.co/yY7s1IfrAb 2 days ago</a>
-						</div>
-					</div>
-					<a class="twitter-control-left" href="#twitter-feed" data-slide="prev"><i class="fa fa-angle-left"></i></a>
-					<a class="twitter-control-right" href="#twitter-feed" data-slide="next"><i class="fa fa-angle-right"></i></a>
-				</div>
-			</div>
-		</div>		
-	</section><!--/#twitter-feed-->
+	
 	
 	<section id="sponsor">
 		<div id="sponsor-carousel" class="carousel slide" data-interval="false">
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-10">
-						<h2>Sponsors</h2>			
+						<h2>Clients</h2>			
 						<a class="sponsor-control-left" href="#sponsor-carousel" data-slide="prev"><i class="fa fa-angle-left"></i></a>
 						<a class="sponsor-control-right" href="#sponsor-carousel" data-slide="next"><i class="fa fa-angle-right"></i></a>
 						<div class="carousel-inner">
 							<div class="item active">
 								<ul>
-									<li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor1.png" alt=""></a></li>
-									<li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor2.png" alt=""></a></li>
-									<li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor3.png" alt=""></a></li>
-									<li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor4.png" alt=""></a></li>
-									<li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor5.png" alt=""></a></li>
-									<li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor6.png" alt=""></a></li>
+									<li><a target="_blank" href="https://www.nissay.co.jp/english/"><img class="img-responsive" src="images/sponsor/sponsor1.png" alt=""></a></li>
+									<li><a target="_blank" href="http://web.livefyre.com/"><img class="img-responsive" src="images/sponsor/sponsor2.png" alt=""></a></li>
+									<li><a target="_blank" href="https://sendgrid.com/marketing/sendgrid-services/b?cvosrc=PPC.Google.sendgrid&cvo_cid=SendGrid%20-%20US%20-%20Brand%20-%20(English)&mc=Paid%20Search&mcd=AdWords&keyword=sendgrid&network=g&matchtype=e&mobile=&content=&search=1&gclid=CPaCkauBnswCFcNahgodg-YNMA"><img class="img-responsive" src="images/sponsor/sponsor3.png" alt=""></a></li>
+									<li><a target="_blank" href="http://www.delta.com/"><img class="img-responsive" src="images/sponsor/sponsor4.png" alt=""></a></li>
+									<li><a target="_blank"  href="http://www.webitcongress.com/"><img class="img-responsive" src="images/sponsor/sponsor5.png" alt=""></a></li>
+									<li><a target="_blank" href="https://www.archlinux.org/"><img class="img-responsive" src="images/sponsor/sponsor6.png" alt=""></a></li>
 								</ul>
 							</div>
 							<div class="item">
 								<ul>
-									<li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor6.png" alt=""></a></li>
-									<li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor5.png" alt=""></a></li>
-									<li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor4.png" alt=""></a></li>
-									<li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor3.png" alt=""></a></li>
-									<li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor2.png" alt=""></a></li>
-									<li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor1.png" alt=""></a></li>
+									<li><a target="_blank" href="https://www.archlinux.org/"><img class="img-responsive" src="images/sponsor/sponsor6.png" alt=""></a></li>
+									<li><a target="_blank"  href="http://www.webitcongress.com/"><img class="img-responsive" src="images/sponsor/sponsor5.png" alt=""></a></li>
+									<li><a target="_blank" href="http://www.delta.com/"><img class="img-responsive" src="images/sponsor/sponsor4.png" alt=""></a></li>
+									<li><a target="_blank" href="https://sendgrid.com/marketing/sendgrid-services/b?cvosrc=PPC.Google.sendgrid&cvo_cid=SendGrid%20-%20US%20-%20Brand%20-%20(English)&mc=Paid%20Search&mcd=AdWords&keyword=sendgrid&network=g&matchtype=e&mobile=&content=&search=1&gclid=CPaCkauBnswCFcNahgodg-YNMA"><img class="img-responsive" src="images/sponsor/sponsor3.png" alt=""></a></li>
+									<li><a target="_blank" href="http://web.livefyre.com/"><img class="img-responsive" src="images/sponsor/sponsor2.png" alt=""></a></li>
+									<li><a target="_blank" href="https://www.nissay.co.jp/english/"><img class="img-responsive" src="images/sponsor/sponsor1.png" alt=""></a></li>
 								</ul>
 							</div>
 						</div>
@@ -288,38 +246,158 @@
 		</div>
 	</section><!--/#sponsor-->
 
-	<section id="contact">
-		<div id="map">
-			<div id="gmap-wrap">
-	 			<div id="gmap"> 				
-	 			</div>	 			
-	    	</div>
-		</div><!--/#map-->
+	<section id="pricing">
+		<div class="container">
+
+        <h1 class="page-header">Pricing Table</h1>
+
+        <p>&nbsp;</p>
+
+        <div class="row flat">
+            <div class="col-lg-3 col-md-3 col-xs-6">
+                <ul class="plan plan1">
+                    <li class="plan-name">
+                        Basic
+                    </li>
+                    <li class="plan-price">
+                        <strong>$29</strong> / month
+                    </li>
+                    <li>
+                        <strong>1</strong> Social Networks
+                    </li>
+                    <li>
+                        <strong>4</strong> Daily Post
+                    </li>
+                    <li>
+                        <strong>10</strong> Comment Response
+                    </li>
+                    <li>
+                        <strong>1 monthly</strong> Reporting
+                    </li>
+                    <li>
+                        <strong>Forum</strong> Support
+                    </li>
+                    <li class="plan-action">
+                        <a target="_blank" href="https://www.paypal.com?cmd=_pay-inv&id=INV2-AWL8-6AX8-HK7J-JG3R" class="btn btn-danger btn-lg">Signup</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-xs-6">
+                <ul class="plan plan2 featured">
+                    <li class="plan-name">
+                        Standard
+                    </li>
+                    <li class="plan-price">
+                        <strong>$59</strong> / month
+                    </li>
+                    <li>
+                        <strong>2</strong> Social Networks
+                    </li>
+                    <li>
+                        <strong>4 on each</strong> Daily Post
+                    </li>
+                    <li>
+                        <strong>20</strong> Comment Response
+                    </li>
+                    <li>
+                        <strong>2 monthly</strong> Reporting
+                    </li>
+                    <li>
+                        <strong>Forum/1 phone</strong> Support
+                    </li>
+                    <li class="plan-action">
+                     <a target="_blank" href="https://www.paypal.com?cmd=_pay-inv&id=INV2-AS56-EBQN-KVTX-9GGF" class="btn btn-danger btn-lg">Signup</a>
+                 </li>
+             </ul>
+         </div>
+
+         <div class="col-lg-3 col-md-3 col-xs-6">
+            <ul class="plan plan3">
+                <li class="plan-name">
+                    Advanced
+                </li>
+                <li class="plan-price">
+                    <strong>$100</strong> / month
+                </li>
+                <li>
+                    <strong>4</strong> Social Networks
+                </li>
+                <li>
+                    <strong>5 on each</strong> Daily Post
+                </li>
+                <li>
+                    <strong>40</strong> Comment Response
+                </li>
+                <li>
+                    <strong>3 monthly</strong> Reporting
+                </li>
+                <li>
+                    <strong>Forum/2phone</strong> Support
+                </li>
+                <li class="plan-action">
+                 <a target="_blank" href="https://www.paypal.com?cmd=_pay-inv&id=INV2-QU9W-MXXF-DFCT-YHWX" class="btn btn-danger btn-lg">Signup</a>
+             </li>
+         </ul>
+     </div>
+
+     <div class="col-lg-3 col-md-3 col-xs-6">
+        <ul class="plan plan4">
+            <li class="plan-name">
+                Mighty
+            </li>
+            <li class="plan-price">
+                <strong>$300</strong> / month
+            </li>
+            <li>
+                <strong>up to 10</strong> Social Networks
+            </li>
+            <li>
+                <strong>6 on each</strong> Daily Post
+            </li>
+            <li>
+                <strong>50</strong> Comment Response
+            </li>
+            <li>
+                <strong>4 monthly</strong> Reporting
+            </li>
+            <li>
+                <strong>Forum/4phone</strong> Support
+            </li>
+            <li class="plan-action">
+             <a target="_blank" href="https://www.paypal.com?cmd=_pay-inv&id=INV2-P2J8-97DS-BZAX-7QRA" class="btn btn-danger btn-lg">Signup</a>
+         </li>
+     </ul>
+ </div>
+</div>
+
+</div> <!-- /container -->
 		<div class="contact-section">
 			<div class="ear-piece">
-				<img class="img-responsive" src="images/ear-piece.png" alt="">
+            <img class="img-responsive" src="images/ear-piece.png" alt="">
 			</div>
 			<div class="container">
+            <section id="contact">
 				<div class="row">
 					<div class="col-sm-3 col-sm-offset-4">
 						<div class="contact-text">
 							<h3>Contact</h3>
 							<address>
-								E-mail: promo@party.com<br>
-								Phone: +1 (123) 456 7890<br>
-								Fax: +1 (123) 456 7891
+								E-mail: patty@pmedia.com <br>
+								Phone: +1 (770) 595 2392<br>
 							</address>
 						</div>
 						<div class="contact-address">
 							<h3>Contact</h3>
 							<address>
-								Unit C2, St.Vincent's Trading Est.,<br>
-								Feeder Road,<br>
-								Bristol, BS2 0UY<br>
-								United Kingdom
+								421 8th Ave,<br>
+								unit 598<br>
+								New York, NY 10116<br>
+								United States
 							</address>
 						</div>
 					</div>
+                  
 					<div class="col-sm-5">
 						<div id="contact-section">
 							<h3>Send a message</h3>
@@ -341,15 +419,15 @@
 					    </div>
 					</div>
 				</div>
-			</div>
-		</div>		
-	</section>
+			
+			
+	
     <!--/#contact-->
 
     <footer id="footer">
         <div class="container">
             <div class="text-center">
-                <p> Copyright  &copy;2016<a target="_blank" href="http://shapebootstrap.net/"> PATTY MEDIA </a>Theme. All Rights Reserved. <br> Designed by <a target="_blank" href="http://shapebootstrap.net/">ShapeBootstrap</a></p>                
+                <p> Copyright  &copy;2016<a target="_blank" href="http://urbanmystique.github.io/Blue/"> PATTY MEDIA </a>Theme. All Rights Reserved. <br> Designed by <a target="_blank" href="https://www.facebook.com/PatSeraphin">Patty Seraphin</a></p>                
             </div>
         </div>
     </footer>

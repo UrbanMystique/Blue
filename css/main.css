@@ -213,7 +213,7 @@ h2 {
 #main-slider 
 .carousel-caption a {
   font-size: 22px;
-  color: #2da1c5
+  color: #A6A6A6
 }
 
 #main-slider 
@@ -504,84 +504,17 @@ h2 {
 }
 
 #about .btn-primary {
-  background-color: #3AF035;
-  color: #111010;
+  background-color: #092CAF;
+  color: #fff;
   text-transform: capitalize;
   border: none;
   margin-top: 28px;
 }
 
 #about .btn-primary:hover {
-  background-color: #000000;
+  background-color: #12CA21;
 }
 
-
-
-/*************************
-******Twitter CSS****
-**************************/
-
-#twitter {
-  background-color: #ecedef;
-  background-image: url("../../evento-free-music-event-template/images/twitter-bg.jpg");
-  background-position: center bottom;
-  background-size: cover;
-  background-repeat:no-repeat;
-  position: relative;
-  padding: 95px 0 90px;
-  overflow: hidden;
-}
-
-.twit {
-  position: absolute;
-  left: 0;
-  top:-42%;
-}
-
-#twitter-feed .item {
-  text-align: center;
-}
-
-#twitter-feed .item img {
-  display: inline-block;
-  width: 78px;
-  height: 78px;
-  border-radius: 50%;
-  background-color: #c5c8ce;
-  padding: 5px;
-  margin-bottom: 30px;
-}
-
-#twitter-feed .item a, 
-#twitter-feed .item p { 
-  font-size: 24px;
-  font-weight: 300;
-  font-family: 'Yanone Kaffeesatz','sans-serif';
-}
-
-#twitter-feed .item p {
-  color: #3D3D3D;
-}
-
-#twitter-feed .item a {
-  color:#00c3ff;
-}
-
-.twitter-control-left, 
-.twitter-control-right {
-  position: absolute;
-  color: #00c3ff;
-  top: 59%;
-  font-size: 24px
-}
-
-.twitter-control-left {
-  left: 0;
-}
-
-.twitter-control-right {
-  right:0;
-} 
 
 
 
@@ -650,12 +583,62 @@ h2 {
 /*************************
 ******Map CSS****
 **************************/
-#map {
-  position: relative;
+body {
+  padding-top: 40px;
+  background-color: #f5f5f5;
 }
-
-#gmap {
-  height:450px;  
+.flat .plan {
+  border-radius: 6px;
+  list-style: none;
+  padding: 0 0 20px;
+  margin: 0 0 15px;
+  background: #fff;
+  text-align: center;
+}
+.flat .plan li {
+  padding: 10px 15px;
+  color: #ccc;
+  border-top: 1px solid #f5f5f5;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+.flat .plan li.plan-price {
+  border-top: 0;
+}
+.flat .plan li.plan-name {
+  border-radius: 6px 6px 0 0;
+  padding: 15px;
+  font-size: 24px;
+  line-height: 24px;
+  color: #fff;
+  background: #e74c3c;
+  margin-bottom: 30px;
+  border-top: 0;
+}
+.flat .plan li > strong {
+  color: #e74c3c;
+}
+.flat .plan li.plan-action {
+  margin-top: 10px;
+  border-top: 0;
+}
+.flat .plan.featured {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.flat .plan.featured li.plan-name {
+  background: #000;
+}
+.flat .plan.featured:hover li.plan-name {
+  background: #c0392b;
+}
+.flat .plan:hover li.plan-name {
+  background: #000;
+}
+#footer {
+  margin-top: 100px;
+  padding-bottom: 30px;
 }
 
 
@@ -664,8 +647,7 @@ h2 {
 **************************/
 
 .contact-section {
-  background-color: #f7ab24;
-  background-image: url("../../evento-free-music-event-template/images/contact-bg.jpg");
+  background-color: #BEBABA;
   background-position:60% 0;
   background-size:contain;
   background-repeat:no-repeat;  
@@ -678,7 +660,7 @@ h2 {
   top: 0;
 }
 
-#contact .container {
+#Pricing .container {
   padding-top:47px;
 }
 
