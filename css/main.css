@@ -430,6 +430,7 @@ h2 {
   font-size: 18px;
   font-weight: 100;
   display: block;
+  font-color: black;
 }
 
 #event-carousel {
@@ -502,7 +503,7 @@ h2 {
 }
 
 #about .btn-primary {
-  background-color: #D5D83F;
+  background-color: #DB285E;
   color: #111010;
   text-transform: capitalize;
   border: none;
